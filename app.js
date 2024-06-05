@@ -1,10 +1,11 @@
-const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-const title = document.getElementById('pok').innerText
+const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']; 
+ 
+const spans = document.querySelectorAll('span');
 
-
-for (let i = 0; i < 6; i++) {
-  title.indexOf[i].style.color = colors[i];
+for (let i = 0; i < spans.length; i++) {
+  spans[i].style.color = colors[i];
 }
+
 
 //All images and information about the Pokémon were taken from the official Pokédex: https://www.pokemon.com/us/pokedex/
 
