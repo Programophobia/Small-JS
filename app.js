@@ -45,3 +45,15 @@ const btn = document.querySelector('.button')
 console.log(btn)
 
 btn.addEventListener('click', addPokemon)
+
+
+let input= document.getElementById('username')
+const header = document.getElementById('print')
+
+let inputValue = document.getElementById('username').value
+
+function changeH(){
+    header.innerText = `You have chosen Pokemon number: ${inputValue}`
+}
+
+input.addEventListener('input', changeH)
