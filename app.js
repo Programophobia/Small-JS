@@ -22,4 +22,29 @@ gsap.utils.toArray(".container").forEach((container) => {
   container.addEventListener("mouseleave", () => tl.timeScale(3).reverse());
 });
 
+//add pokemon
+const addPlace = document.getElementById('yourPokemon')
+let url = './Poke/'
+//let inputValue = document.querySelector('input').value;
+//let inputParsedInValue = parseInt(inputValue);
+//console.log(inputParsedInValue);
 
+
+function addPokemon(){
+  let inputValue = document.querySelector('.input').value;
+  let inputParsedInValue = parseInt(inputValue);
+  const element = document.createElement('img');
+  element.src = `${url}${inputParsedInValue}.png`
+addPlace.appendChild(element);
+  console.log('dziala klik', element.src);
+  inputValue = ''
+  //if(inputParsedInValue < 1) {
+  //  snputParsedInValue = 2
+ // };
+
+}
+
+const btn = document.querySelector('.button')
+console.log(btn)
+
+btn.addEventListener('click', addPokemon)
