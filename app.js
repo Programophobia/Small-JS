@@ -38,9 +38,6 @@ function addPokemon(){
 addPlace.appendChild(element);
   console.log('dziala klik', element.src);
   inputValue = ''
-  //if(inputParsedInValue < 1) {
-  //  snputParsedInValue = 2
- // };
 
 }
 
