@@ -54,5 +54,5 @@ input.addEventListener('input', function () {
   if (!this.value) {
     return heading.innerText = `Enter the number from 1 to 90`
   }
-  heading.innerText = `Pokemon number: ${input.value} thank you for adding`;
+  heading.innerText = `Pokemon number: ${input.value} asking you to press add`;
 })
