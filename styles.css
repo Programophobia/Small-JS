@@ -10,7 +10,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: #e5e5e5;
+  background-color: white;
   font-family: ubuntu;
 }
 
@@ -157,7 +157,13 @@ button {
 #water {
   background-color: #4993C2;
 }
-
+#btn{
+  color: black;
+  border: solid black;  
+}
+input {
+  width: 80px;
+}
 .instructions {
   width: 100%;
   text-align: center;
