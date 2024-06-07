@@ -13,6 +13,11 @@ body {
   background-color: white;
   font-family: ubuntu;
 }
+.inputPick{
+    align-items: center;
+  justify-content: center;
+}
+
 
 .container {
   width: 20%;
