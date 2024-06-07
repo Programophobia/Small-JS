@@ -47,13 +47,12 @@ console.log(btn)
 btn.addEventListener('click', addPokemon)
 
 
-let input= document.getElementById('username')
-const header = document.getElementById('print')
-
-let inputValue = document.getElementById('username').value
-
-function changeH(){
-    header.innerText = `You have chosen Pokemon number: ${inputValue}`
-}
-
-input.addEventListener('input', changeH)
+const heading = document.getElementById('print');
+const input = document.querySelector('input');
+ 
+input.addEventListener('input', function () {
+  if (!this.value) {
+    return heading.innerText = `Enter the number from 1 to 90`
+  }
+  heading.innerText = `Pokemon number: ${input.value} thank you for adding`;
+})
